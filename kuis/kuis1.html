@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kuali nyonya</title>
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Times New Roman, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #33d7ff; /* Warna latar belakang header */
+            color: pink;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header img {
+            width: 50px; /* Ukuran logo */
+            height: auto;
+            margin-right: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        main {
+            padding: 20px;
+        }
+        img {
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        footer h3 {
+            margin-top: 0;
+        }
+        footer p, footer form {
+            margin: 10px 0;
+        }
+        footer form label {
+            display: block;
+            margin: 5px 0;
+        }
+        footer form input[type="text"], 
+        footer form input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        footer form input[type="radio"], 
+        footer form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        footer form input[type="submit"] {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer form input[type="submit"]:hover {
+            background-color: #ff4500;
+        }
+        footer div.social-icons {
+            margin-top: 15px;
+        }
+        footer div.social-icons a img {
+            margin: 0 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="https://png.pngtree.com/png-clipart/20221207/ourmid/pngtree-cooking-pan-logo-png-image_6514597.png" alt="kuali nyonya.jpg"> <!-- Ganti "logo.png" dengan path logo Anda -->
+        <h1>Restoran Kuali Nyonya</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        <section id="home">
+            <h2>Selamat Datang di Restoran Kuali Nyonya</h2>
+            <i>Restoran ini menawarkan hidangan spesial yang terbuat dari bahan-bahan segar dan berkualitas. Kami berkomitmen untuk memberikan pengalaman kuliner terbaik kepada setiap pelanggan.</i>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/3b/1a/e8/caption.jpg?w=1200&h=-1&s=1" alt="Gambar Restoran" style="display: block; margin: 0 auto;">
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <!-- Tabel Menu -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama Makanan</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://asset.kompas.com/crops/GmkkJbQ2It3HSVrC5H-weKWFHxk=/0x52:1000x719/1200x800/data/photo/2020/07/14/5f0d253a6edd5.jpg" alt="bebek goreng kampung" width="100"></td>
+                        <td>bebek goreng kampung</td>
+                        <td>Rp25.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://fibercreme.com/wp-content/uploads/2021/03/Ayam-Panggang-minang.jpg" alt="Ayam Panggang" width="100"></td>
+                        <td>Ayam Panggang</td>
+                        <td>Rp40.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://eorder-bppbj.jakarta.go.id/web/image/product.image/18102/image?unique=d8d9d1e" alt="nasi ayam rica-rica" width="100"></td>
+                        <td>nasi ayam rica-rica</td>
+                        <td>Rp35.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img-global.cpcdn.com/recipes/58f7a5b43560ad12/1200x630cq70/photo.jpg" alt="cendol crystal" width="100"></td>
+                        <td>cendol crystal</td>
+                        <td>Rp15.000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama Minuman</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://www.frisianflag.com/storage/app/media/uploaded-files/es-teler-nikmat.jpg" alt="es teler" width="100"></td>
+                        <td>es teler</td>
+                        <td>Rp20.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://asset.kompas.com/crops/-EW4dZIFD3U055K4qtHqSgUg_hM=/92x67:892x600/1200x800/data/photo/2023/08/23/64e59deb79bfb.jpg" alt="es teh" width="100"></td>
+                        <td>es teh</td>
+                        <td>Rp10.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flash-coffee.com/id/wp-content/uploads/sites/13/2023/06/THAI-TEA.png" alt="thai tea" width="100"></td>
+                        <td>thai tea</td>
+                        <td>Rp35.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.bitrix24.id/b14044525/landing/c62/c6294854ba78d852574632dc890d190f/02_Coffee_Toffee_-_Coffee_based_drink_02_1x.jpg" alt="coffe" width="100"></td>
+                        <td>coffe</td>
+                        <td>Rp15.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimoni Pelanggan</h2>
+            <ol>
+                <li>"Makanan di sini luar biasa, pelayanan cepat dan ramah!" – Andi</li>
+                <li>"Tempat yang sempurna untuk makan bersama keluarga." – Lila</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>Kontak Kami</h3>
+        <p>Alamat: Jl. Olo Ladang, Kec. Padang Bar., Kota Padang, Sumatera Barat</p>
+        <p>Telepon: (0751) 8955351 | Email: info@kualinyonya.com</p>
+        
+        <!-- Formulir Reservasi -->
+        <h3>Formulir Reservasi</h3>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Tanggal Reservasi:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label>Jumlah Tamu:</label>
+            <input type="radio" id="2pax" name="guests" value="2" required> 2 Orang<br>
+            <input type="radio" id="4pax" name="guests" value="4"> 4 Orang<br>
+            <input type="radio" id="morepax" name="guests" value="more"> Lebih dari 4 Orang<br><br>
+
+            <input type="checkbox" id="terms" name="terms" required> Saya setuju dengan syarat dan ketentuan<br><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+
+        <!-- Tautan Media Sosial -->
+        <div class="social-icons">
+            <h3>Ikuti Kami di Media Sosial</h3>
+            <a href="https://www.facebook.com/restoranmu" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://www.instagram.com/restoranmu" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/480px-Instagram_logo_2022.svg.png" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://twitter.com/restoranmu" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1245px-Logo_of_Twitter.svg.png" alt="Twitter" width="30" height="30">
+            </a>
+        </div>
+
+        <!-- Google Maps Iframe -->
+        <h3>Lokasi Kami</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6709.14401640488!2d100.34807562938305!3d-0.9404225167949026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b930fb9f72e5%3A0x4b9a3aa979f7669!2sKuali%20Nyonya!5e0!3m2!1sid!2sid!4v1731658060740!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
